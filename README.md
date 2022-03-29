@@ -1,4 +1,7 @@
 <h1 align="center">Embroidery Calculator</h1>
+<div align="center">
+<a href="https://marialuisacampos.github.io/embroidery-calculator/">Check it online!</a>
+</div>
 <p align="center">As my embroiderer friends always ask me how to price their craft well, I developed a calculator for that!</p>
 
 <h1 align="center">
