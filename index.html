@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculadora para Bordadeiras</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+     <header>
+          <h1>Calculadora para Bordadeiras</h1>
+          <p>Oie, bordadeira! Essa calculadora foi feito para que você possa precificar o seu trabalho de forma justa. Para que funcione, é muito importante que você preencha todos os espaços, ok? Caso seja algo que não faça parte do seu preço, digite apenas um 0.</p>
+     </header>
+     <main>
+          <div class="container">
+               <section class="horasDeTrabalho">
+                    <h2>Sua hora de trabalho</h2>
+                    <p class="descricao">Vamos calcular quanto você deve cobrar por cada hora do seu trabalho.</p>
+                    <form action="/" onsubmit="return false">
+                         <label for="faturamento">Quanto você deseja faturar por mês?</label>
+                         <input type="number" id="faturamento">
+                         <label for="dias">Quantos dias por semana você pretende trabalhar?</label>
+                         <input type="number" id="diasDeTrabalho">
+                         <label for="horas">Quantas horas por dia você pretende trabalhar?</label>
+                         <input type="number" id="horasDeTrabalho">
+                         <button type="submit" id="horaSend">Calcular</button>
+                    </form>
+                    <span class="mostrarHorasDeTrabalho"></span>
+               </section>
+               <section class="custosFixos">
+                    <h2>Custos fixos mensais</h2>
+                    <p class="descricao">Esse valor também faz parte da sua encomenda e é muito importante calculá-lo!</p>
+                    <form action="/" onsubmit="return false">
+                         <label for="custosMensais">Custos mensais que você possui com seu trabalho:</label>
+                         <p class="exemplos">Exemplo: conta de luz, internet, plataformas de assinatura, etc.</p>
+                         <input type="number" id="custosMensais">
+                         <label for="encomendasMensais">Quantas encomendas você pretende realizar por mês?</label>
+                         <input type="number" id="encomendasMensais">
+                         <button class="custosSend">Calcular</button>
+                         <span class="mostrarCustosFixos"></span>
+                    </form>
+               </section>
+          </div>
+          <section class="bordado">
+               <h2>Valor da encomenda:</h2>
+               <p class="descricao">Já computamos os valores calculados anteriormente, agora vamos utilizá-los como base para calcular o valor que será a sua encomenda. Coloque o valor que você irá gastar em cada item nesta sua encomenda:</p>
+               <form action="/" onsubmit="return false">
+                    <label for="tecido">Tecido:</label>
+                    <input type="number" id="tecido">
+                    <label for="bastidor">Bastidor:</label>
+                    <input type="number" id="bastidor">
+                    <label for="linhas">Linhas:</label>
+                    <input type="number" id="linhas">
+                    <label for="horasBordando">Quantas horas você acredita que passará bordando esta encomenda?</label>
+                    <input type="number" id="horas">
+                    <label for="embalagem">Quanto você gastará com embalagem?</label>
+                    <input type="number" id="embalagem">
+                    <label for="lucro">Qual será a porcentagem de lucro?</label>
+                    <p class="exemplos">Indicamos entre 25% e 50%</p>
+                    <input type="number" id="porcentagem">
+                    <button class="valorSend">Calcular valor final</button>
+                    <span class="mostrarValorEncomenda"></span>
+               </form>
+          </section>
+     </main>
+     <script src="/script.js"></script>
+</body>
+
+</html>

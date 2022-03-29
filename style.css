@@ -1,0 +1,113 @@
+body {
+  background-image: linear-gradient(
+    92.7deg,
+    rgba(245, 212, 212, 1) 8.5%,
+    rgba(252, 251, 224, 1) 90.2%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+  text-decoration: none;
+}
+
+header {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #3a3536;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  color: #231f20;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.container section {
+  background-color: white;
+  border: 20px solid pink;
+  padding: 2rem;
+}
+
+.bordado {
+  max-width: 500px;
+  background-color: white;
+  border: 20px solid pink;
+  padding: 2rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+.descricao {
+  font-size: 0.9rem;
+  font-style: oblique;
+  margin-bottom: 1rem;
+}
+
+.exemplos {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+form input {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.horasDeTrabalho::before {
+  content: "Etapa 1";
+  font-family: monospace;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.custosFixos::before {
+  content: "Etapa 2";
+  font-family: monospace;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.bordado::before {
+  content: "Etapa 3";
+  font-family: monospace;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.mostrarHorasDeTrabalho, .mostrarCustosFixos, .mostrarValorEncomenda {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: monospace;
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: block;
+  }
+  .container .horasDeTrabalho {
+    margin-bottom: 2rem;
+  }
+}
