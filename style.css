@@ -103,6 +103,12 @@ button {
   font-family: monospace;
 }
 
+footer {
+  text-align: center;
+  font-family: monospace;
+  padding: 2rem 0;
+}
+
 @media (max-width: 650px) {
   .container {
     display: block;
